@@ -1,7 +1,5 @@
 <template>
-  <div class="app">
-    <router-view></router-view>
-  </div>
+  <div class="post-publish">文章发布</div>
 </template>
 
 <script>
