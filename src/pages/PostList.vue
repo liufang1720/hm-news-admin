@@ -32,7 +32,7 @@
       <!-- 图片 -->
       <el-table-column label="封面">
         <template v-slot="scoped">
-          <img :src="halderUrl(scoped.row.cover[0].url)" alt="" />
+          <img :src="handleUrl(scoped.row.cover[0].url)" alt="" />
         </template>
       </el-table-column>
       <!-- 按钮 -->
@@ -115,7 +115,7 @@ export default {
       return index + 1 + (this.pageIndex - 1) * this.pageSize
     },
     //优化url地址
-    halderUrl(url) {
+    handleUrl(url) {
       if (url.startsWith('http')) {
         return url
       } else {
